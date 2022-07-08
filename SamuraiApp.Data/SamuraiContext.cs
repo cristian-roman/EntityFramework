@@ -35,6 +35,9 @@ namespace SamuraiApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Samurai>()
+                .HasMany(samurai => samurai.Battles)
+                .WithMany(battle => battle.Samurais);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

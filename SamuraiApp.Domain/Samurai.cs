@@ -8,7 +8,7 @@ public class Samurai
 
     public List<Quote> Quotes { get; set; } = new List<Quote>();
 
-    public List<Battle> Battles { get; set; } = new List<Battle>();
+    public List<Battle> Battles { get; set; }
 
     public Horse Horse { get; set; }
 }
